@@ -1,0 +1,37 @@
+package application;
+import java.util.Scanner;
+
+import entidades.Contapf;
+
+import java.util.Locale;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner teclado = new Scanner(System.in);
+	
+		
+		Contapf conta1 = new Contapf();
+		System.out.println("Criação de conta pessoa física. Digite os dados do titular:");
+		System.out.println("Nome: ");
+		conta1.setNomeTitular(teclado.nextLine());
+		System.out.println("Digite o número da conta com 8 digitos: ");
+		conta1.setNumeroConta(teclado.nextInt());
+		System.out.println("Deseja depositar algum valor? ");
+		char resp = teclado.nextLine().charAt(0);
+		if (resp == 's') {
+			conta1.setValorDeposito(teclado.nextDouble());
+		}
+		else {
+			conta1.setValorDeposito(0);
+		}
+		
+		
+		
+		teclado.close();
+		
+
+	}
+
+}

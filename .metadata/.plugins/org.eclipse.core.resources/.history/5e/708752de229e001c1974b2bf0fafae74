@@ -1,0 +1,28 @@
+package entidades;
+
+public class contapf {
+	private String nomeTitular;
+	private int numeroConta;
+	private double valorDeposito;
+	
+	public contapf() {
+		
+	}
+	
+	public contapf(String nomeTitular, int numeroConta, double valorDeposito) {
+		super();
+		this.nomeTitular = nomeTitular;
+		this.numeroConta = numeroConta;
+		this.valorDeposito = valorDeposito;
+	}
+	
+	public contapf(String nomeTitular, int numeroConta) {
+		super();
+		this.nomeTitular = nomeTitular;
+		this.numeroConta = numeroConta;
+		
+	}
+	
+	
+
+}

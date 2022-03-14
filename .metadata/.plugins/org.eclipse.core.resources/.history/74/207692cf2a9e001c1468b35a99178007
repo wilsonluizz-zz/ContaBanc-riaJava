@@ -1,0 +1,60 @@
+package entidades;
+
+public class Contapf {
+	private String nomeTitular;
+	private int numeroConta;
+	private double valorDeposito;
+	
+	public Contapf() {
+		
+	}
+	
+	public Contapf(String nomeTitular, int numeroConta, double valorDeposito) {
+		super();
+		this.nomeTitular = nomeTitular;
+		this.numeroConta = numeroConta;
+		this.valorDeposito = valorDeposito;
+	}
+	
+	public Contapf(String nomeTitular, int numeroConta) {
+		super();
+		this.nomeTitular = nomeTitular;
+		this.numeroConta = numeroConta;
+		
+	}
+
+	public String getNomeTitular() {
+		return nomeTitular;
+	}
+
+	public void setNomeTitular(String nomeTitular) {
+		this.nomeTitular = nomeTitular;
+	}
+
+	public int getNumeroConta() {
+		return numeroConta;
+	}
+
+	public void setNumeroConta(int numeroConta) {
+		this.numeroConta = numeroConta;
+	}
+
+	public double getValorDeposito() {
+		return valorDeposito;
+	}
+
+	public void setValorDeposito(double valorDeposito) {
+		this.valorDeposito = valorDeposito;
+	}
+
+	public String toString() {
+		return "Conta cadastrada com susesso! "
+				+ "Dados da conta Nome: " + nomeTitular + " , Numero da conta " + numeroConta +
+				" , Valor do depósito inical R$ " + valorDeposito ;
+	}
+	
+	
+	
+	
+
+}
